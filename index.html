@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulta de constancia - JUAN CARLOS RIVERA GALVEZ</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    .overlay {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .modal {
+      width: 100%;
+      max-width: 1200px;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, .2);
+      overflow: hidden;
+    }
+
+    .modal-header {
+      background: #f5efe4;
+      border-bottom: 4px solid #7b1534;
+      padding: 20px 24px;
+    }
+
+    /* Muestra los logos incluidos en la imagen de la constancia. */
+    .logos {
+      position: relative;
+      width: 100%;
+      max-width: 590px;
+      aspect-ratio: 5.5;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .logos img {
+      position: absolute;
+      width: 224%;
+      max-width: none;
+      left: -60%;
+      top: -35%;
+    }
+
+    h1 {
+      margin: 18px 0 0;
+      color: #7b1534;
+      font-size: 24px;
+    }
+
+    .modal-body {
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      align-items: start;
+    }
+
+    .info-column,
+    .images-column {
+      min-width: 0;
+    }
+
+    dl {
+      margin: 0;
+      border: 1px solid #dedede;
+    }
+
+    .info-row {
+      display: grid;
+      grid-template-columns: 36% 64%;
+      border-bottom: 1px solid #dedede;
+    }
+
+    .info-row:last-child {
+      border-bottom: none;
+    }
+
+    dt,
+    dd {
+      margin: 0;
+      padding: 11px 12px;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+
+    dt {
+      background: #f8f5ef;
+      font-weight: bold;
+      border-right: 1px solid #dedede;
+    }
+
+    .cert-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+    }
+
+    a:focus-visible {
+      outline: 3px solid #b18b46;
+      outline-offset: 3px;
+    }
+
+    footer {
+      padding: 0 24px 20px;
+      color: #666;
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .modal-body {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 21px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .overlay {
+        padding: 10px;
+      }
+
+      .modal-header,
+      .modal-body {
+        padding: 16px;
+      }
+
+      .info-row {
+        grid-template-columns: 1fr;
+      }
+
+      dt {
+        border-right: none;
+        border-bottom: 1px solid #dedede;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay">
+    <main class="modal">
+      <header class="modal-header">
+        <div class="logos">
+          <img
+            src="constancia.jpg"
+            alt="Logos de Educación e INEA incluidos en la imagen proporcionada"
+          >
+        </div>
+
+        <h1>CONSULTA DE CONSTANCIA</h1>
+      </header>
+
+      <div class="modal-body">
+        <section class="info-column" aria-label="Datos de la constancia">
+          <dl>
+            <div class="info-row">
+              <dt>Nombre:</dt>
+              <dd>JUAN CARLOS RIVERA GALVEZ</dd>
+            </div>
+
+            <div class="info-row">
+              <dt>CURP:</dt>
+              <dd>RIGJ790227HMCVLN04</dd>
+            </div>
+
+            <div class="info-row">
+              <dt>Actividad desempeñada:</dt>
+              <dd>Asesor voluntario de educación primaria</dd>
+            </div>
+
+            <div class="info-row">
+              <dt>Institución:</dt>
+              <dd>
+                Instituto Nacional para la Educación de los Adultos (INEA)
+              </dd>
+            </div>
+
+            <div class="info-row">
+              <dt>Inicio:</dt>
+              <dd>02/01/2025</dd>
+            </div>
+
+            <div class="info-row">
+              <dt>Término:</dt>
+              <dd>15/07/2026</dd>
+            </div>
+
+            <div class="info-row">
+              <dt>Folio:</dt>
+              <dd> a75b2fb5-d22e-40ab-aec0-0b65d8580acc</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="images-column" aria-label="Imagen de la constancia">
+          <a href="constancia.jpg" target="_blank" rel="noopener">
+            <img
+              class="cert-img"
+              src="constancia.jpg"
+              alt="Constancia proporcionada de JUAN CARLOS RIVERA GALVEZ"
+            >
+          </a>
+        </section>
+      </div>
+
+          </main>
+  </div>
+</body>
+</html>
